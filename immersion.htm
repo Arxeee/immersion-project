@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersion</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+       
+        <h1>Calapan Cable</h1> 
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <section>
+        <div class="home-container1">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 13, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post1.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    First day of work immersion at Calapan Cable! Orientation, group assignments, and… alphabetizing customer ledgers. Not the most exciting start, but hey, it’s all part of the process. #day1
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">109</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 14, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post2.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Spent the day rewriting customer receipts. A lot of writing, but nothing new for us students. One worker even told us to slow down.  #day2
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">169</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 15, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post3.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Still rewriting receipts… but why not just encode them? Seriously, handwriting everything in 2025? #day3
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">169</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 16, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post4.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Same task, different day. Just keeping my head down and doing the work. Some things are better left unspoken. #day4
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">134</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 17, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post5.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    New task: organizing books… at a cable company? 🤨 Also, the manager who hates mistakes made one himself. Irony at its finest. #day5
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">194</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 20, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post6.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Books, books, and more books. That’s it. That’s the post. #day6
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">344</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 21, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post7.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Fixing messy Word documents today. Who wrote these? Grammar, format, design—everything was a disaster. But don’t worry, I saved the day. #day7
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">234</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 22, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post8.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Encoding test? Crushed it. Website task? Completely pointless. But hey, that’s just my opinion. #day8
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">694</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 23, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post9.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Still coding… but the real highlight? This whole thing is almost OVER. #day9
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">157</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+        <div class="home-container">
+            <div class="ig-post">
+                <div class="post-header">
+                    <img src="profile.png" alt="Profile Image" class="profile-img">
+                    <div class="post-info">
+                        <span class="username">John Arce Evora</span>
+                        <span class="date">January 24, 2025</span>
+                    </div>
+                </div>
+                <div>
+                    <img src="post10.jpg" alt="Post Image" class="post-img">
+                </div>
+                <div class="post-caption">
+                    Work immersion: ✅ Final thoughts? 5/10. the cat? 10/10 🐱 Learned mental lessons but no real skills. Expected to do cable-related tasks, but all we did was write and organize books. Oh well.  #day10
+                </div>
+                <div class="post-actions">
+                    <div class="like-container">
+                        <span class="heart-icon" onclick="toggleLike(this)">
+                            <i class="fa-regular fa-heart"></i>
+                        </span>
+                        <span class="like-count">999</span>
+                    </div>
+                    <span class="comments" onclick="addComment()">
+                        💬 <span class="comment-count">0</span>
+                    </span>
+                </div>
+                <div class="comment-section">
+                    <input type="text" id="commentInput" placeholder="Write a comment..." onkeypress="submitComment(event)">
+                    <div class="comments-list"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleLike(heart) {
+            let icon = heart.querySelector("i");
+            let likeCount = heart.nextElementSibling;
+            let currentLikes = parseInt(likeCount.textContent);
+
+            if (heart.classList.contains("liked")) {
+                icon.classList.replace("fa-solid", "fa-regular"); 
+                likeCount.textContent = currentLikes - 1;
+                heart.classList.remove("liked");
+            } else {
+                icon.classList.replace("fa-regular", "fa-solid"); 
+                likeCount.textContent = currentLikes + 1;
+                heart.classList.add("liked");
+            }
+        }
+
+        function submitComment(event) {
+    if (event.key === "Enter") {
+        let commentInput = event.target; 
+        let commentText = commentInput.value.trim();
+        
+        if (commentText !== "") {
+            let postContainer = commentInput.closest(".ig-post"); 
+            let commentsList = postContainer.querySelector(".comments-list"); 
+            let commentCount = postContainer.querySelector(".comment-count"); 
+
+            let newComment = document.createElement("div");
+            newComment.textContent = commentText;
+            commentsList.appendChild(newComment);
+
+            commentCount.textContent = parseInt(commentCount.textContent) + 1;
+
+            commentInput.value = ""; 
+        }
+    }
+}
+    </script>
+
+</body>
+</html>
